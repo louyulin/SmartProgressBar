@@ -16,9 +16,17 @@
         app:progress_text_size="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:progress="50"
         android:padding="5dp"
         android:layout_marginTop="30dp"/>
+
+    <com.example.lyl.smartprogressbar.view.RoundProgressBarWidthNumber
+        android:id="@+id/progressbar2"
+        app:progress_text_size="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"/>
+
 </LinearLayout>
 
 </ScrollView>

@@ -6,6 +6,7 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.lyl.smartprogressbar.view.HorizontalProgressbarWithProgress;
+import com.example.lyl.smartprogressbar.view.RoundProgressBarWidthNumber;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,11 +18,14 @@ public class MainActivity extends AppCompatActivity {
             switch (msg.what) {
                 case 10:
                     progressbar1.setProgress((Integer) msg.obj);
+                    progressbar2.setProgress((Integer) msg.obj);
                     break;
             }
             return false;
         }
-    });;
+    });
+    ;
+    private RoundProgressBarWidthNumber progressbar2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         progressbar1 = (HorizontalProgressbarWithProgress) findViewById(R.id.progressbar1);
+        progressbar2 = (RoundProgressBarWidthNumber) findViewById(R.id.progressbar2);
     }
 
 
